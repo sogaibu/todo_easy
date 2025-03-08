@@ -1,0 +1,199 @@
+/* 全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ログインフォーム */
+#login_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+#login_form input {
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#login_form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#login_form input[type="button"] {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #007bff;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#login_form input[type="button"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#login_form input[type="button"]:active {
+  background-color: #004085;
+  transform: translateY(1px);
+}
+
+/* アプリ本体 */
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+#app h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 入力フィールド */
+#add_date,
+#add_text {
+  padding: 12px;
+  margin: 8px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 250px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#add_date:focus,
+#add_text:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* 追加ボタン */
+#add_button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#add_button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+#add_button:active {
+  background-color: #1e7e34;
+  transform: translateY(1px);
+}
+
+/* テーブル */
+table {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* removeボタン（削除ボタン） */
+.remove-button {
+  background-color: #17a2b8; /* 鮮やかな水色 */
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.remove-button:hover {
+  background-color: #138496;
+  transform: translateY(-2px);
+}
+
+.remove-button:active {
+  background-color: #117a8b;
+  transform: translateY(1px);
+}
+
+/* ログアウトボタン */
+#app input[type="button"] {
+  background-color: #6c757d; /* どんよりとした暗めの赤 */
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 30px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#app input[type="button"]:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}
+
+#app input[type="button"]:active {
+  background-color: #4e555b;
+  transform: translateY(1px);
+}
+
+/* テーブル内の削除ボタンを中央に配置 */
+td .remove-button {
+  display: block;
+  margin: 0 auto; /* 中央に寄せる */
+  padding: 8px 16px;
+}
